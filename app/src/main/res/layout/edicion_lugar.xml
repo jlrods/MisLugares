@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/t_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tag_nombre"
+            android:textSize="18dp"
+            tools:text="@string/tag_nombre" />
+
+        <EditText
+            android:id="@+id/nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Algo que identifique el lugar"
+            android:inputType="textPersonName"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/t_tipo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tipo:"
+                android:textSize="18dp" />
+
+            <Spinner
+                android:id="@+id/tipo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/t_direccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Direccion:"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/direccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Direccion del lugar"
+            android:inputType="textPostalAddress"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/t_telefono"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Telefono:"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/telefono"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="telefono para contactar"
+                android:inputType="phone" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/t_url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="URL:"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Pagina web"
+            android:inputType="textUri" />
+
+        <TextView
+            android:id="@+id/t_comentario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comentario:"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/comentario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Introduce tus notas"
+            android:inputType="textMultiLine" />
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>
